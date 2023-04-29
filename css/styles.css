@@ -184,7 +184,21 @@ margin-right: auto;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
   cursor: pointer;
+  position: relative;
 }
+
+.nav-list-link-act::after {
+position: absolute;
+width: 100%;
+height: 4px;
+bottom: 0px;
+left: 0px;
+content: "";
+background: var(--active-font);
+border-radius: 2px;
+/*background-color: transparent;*/
+}
+
 
 .st,
 .pf {
