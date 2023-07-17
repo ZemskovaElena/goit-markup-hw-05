@@ -787,6 +787,13 @@ body {
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
 .modal {
   width: 528px;
   height: 580px;
@@ -794,7 +801,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .modal-close-btn {
@@ -811,6 +818,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
 }
 
 
