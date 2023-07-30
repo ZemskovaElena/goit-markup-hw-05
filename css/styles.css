@@ -785,13 +785,18 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  
 }
+
+
+
 
 .backdrop.is-hidden .modal{
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: scale(0) translate(-50%, -50%);
+
 }
 
 .modal {
@@ -801,7 +806,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.1);
+  transform:  scale(1) translate(-50%, -50%);
+  transition: transform 1s;
 }
 
 .modal-close-btn {
@@ -818,7 +824,6 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
 }
 
 
